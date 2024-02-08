@@ -1,0 +1,234 @@
+*{margin: 0; padding: 0;}
+html{width: 390px;}
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    color: #111;
+    height: 100%;
+}
+a{
+    color: #111;
+    text-decoration: none;
+    display: block;
+}
+h3{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+ul{list-style: none;}
+img{vertical-align: top;}
+.house h3{
+    margin: 50px auto 20px;
+    width: 90%;
+}
+
+/*header style*/
+#header{
+    display: flex;
+    padding: 13px 20px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    background: white;
+    width: 350px;
+    align-items: center;
+}
+.menu{margin-right: 38px;}
+.qr_code{padding-right: 10px;}
+
+/*content style*/
+/*main-banner style*/
+.main-banner{
+    position: relative;
+    padding-top: 50px;
+}
+.main-banner h2{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.main-text{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+}
+.main-text p{
+    color: #f5f5f5;
+    margin-bottom: 16px;
+}
+.main-text a,
+.best-text a,
+.color-list a{
+    background: #FFDB00;
+    font-size: 12px;
+    padding: 9px 24px;
+    border-radius: 50px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.main-banner swiper-slide {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.main-banner swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*house style*/
+.house{
+    margin-bottom: 50px;
+}
+.house a{display: inline-block;}
+.house-img{
+    margin: 0 auto;
+    width: 350px;
+}
+.house h4{
+    font-weight: 500;
+    color: #484848;
+    margin-bottom: 10px;
+}
+.house-list{
+    width: 350px;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 20px;
+}
+.house-list ul{
+    width: 66%;
+    padding-left: 10px;
+}
+.house-list li:first-child{
+    color: #0058A3;
+    font-size: 12px;
+    font-weight: 500;
+}
+.house-list li:nth-child(2) a{
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+.house-list li:nth-child(3){
+    font-size: 12px;
+    color: #484848;
+}
+.house-list li:nth-child(4){
+    color: #CCC;
+    font-size: 11px;
+    text-decoration-line: line-through;
+    text-align: right;
+}
+.house-list li:last-child{
+    font-size: 14px;
+    font-weight: 500;
+}
+.list-heart{display: inline-flex;}
+.add-cart{margin-right: 5px;}
+.last-list{
+    display: flex;
+    justify-content: space-between;
+}
+.house-list span{
+    color: #E00751;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.none{color: #FFF !important;}
+.house-list:last-child{border-bottom: none;}
+
+.heart input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.heart {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.heart input:checked ~ img {
+    background: url(c_img/active-heart.png) no-repeat 0 0;
+}
+
+/*gift style*/
+.gift{
+    width: 90%;
+    margin: 0 auto;
+}
+.gift h3,
+.more h3{margin-bottom: 20px;}
+.gift h4{font-weight: 500;}
+.gift div{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 8px;
+}
+.gift p{
+    color: #484848;
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+
+/*more style*/
+.more{
+    width: 90%;
+    margin: 10px auto 90px;
+}
+.more span{color: #0058A3;}
+.tabs button{
+    width: 75px;
+    height: 38px;
+    margin-right: 13px;
+    border-radius: 50px;
+    border: 1px solid #0058A3;
+    background: none;
+    font-size: 12px;
+    color: #111;
+    margin-bottom: 25px;
+}
+.tabs button:last-child{margin-right: 0;}
+.tab1 > img:nth-child(odd) {
+    margin-right: 7px;
+}
+.tab1 img{margin-bottom: 7px;}
+.active{
+    background: #0058A3 !important;
+    color: #f5f5f5 !important;
+    font-weight: 600;
+    border: none;
+}
+
+/*tool-bar style*/
+.tool-wrap{
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 390px;
+    z-index: 100;
+}
+.tool-bar{
+    display: flex;
+    width: 350px;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+.tool-list{
+    text-align: center;
+    font-size: 11px;
+}
+.home{color: #0058A3;}
